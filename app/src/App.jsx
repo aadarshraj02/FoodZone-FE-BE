@@ -24,7 +24,9 @@ const App = () => {
       }
     };
     fetchFoodData();
-  });
+  }, []);
+
+  console.log(data);
 
   if (error) {
     return <div>{error}</div>;
