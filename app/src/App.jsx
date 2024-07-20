@@ -11,6 +11,8 @@ const App = () => {
 
   const [error, setError] = useState(null);
 
+  const [filteredData, setFilteredData] = useState(null);
+
   useEffect(() => {
     const fetchFoodData = async () => {
       setLoading(true);
