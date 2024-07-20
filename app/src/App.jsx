@@ -49,7 +49,11 @@ const App = () => {
             <img src="/logo.svg" alt="" />
           </div>
           <div className="search">
-            <input type="text" placeholder="Search Food..." />
+            <input
+              onChange={searchFood}
+              type="text"
+              placeholder="Search Food..."
+            />
           </div>
         </TopContainer>
         <FilterContainer>
