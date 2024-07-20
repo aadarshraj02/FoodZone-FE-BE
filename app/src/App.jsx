@@ -3,7 +3,11 @@ import styled from "styled-components";
 const App = () => {
   return (
     <MainContainer>
-      <TopContainer></TopContainer>
+      <TopContainer>
+        <div className="logo">
+          <img src="/logo.svg" alt="" />
+        </div>
+      </TopContainer>
     </MainContainer>
   );
 };
