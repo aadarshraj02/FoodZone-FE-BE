@@ -21,6 +21,7 @@ const App = () => {
         const json = await response.json();
 
         setData(json);
+        setFilteredData(json);
         setLoading(false);
       } catch (error) {
         setError("Unable to fetch data");
@@ -28,6 +29,10 @@ const App = () => {
     };
     fetchFoodData();
   }, []);
+
+  const searchFood = (e) => {
+    const searchValue = e.target.value;
+  };
 
   if (error) {
     return <div>{error}</div>;
@@ -54,7 +59,7 @@ const App = () => {
           <Button>Dinner</Button>
         </FilterContainer>
       </Container>
-      <SearchResult data={data}></SearchResult>
+      <SearchResult data={filteredData}></SearchResult>
     </>
   );
 };
