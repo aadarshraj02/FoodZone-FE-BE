@@ -14,6 +14,7 @@ body{
   background-color: #323343;
   color: #fff;
   min-height: 100vh;
+  font-family:"Inter",sans-serif
 }
 `;
 
