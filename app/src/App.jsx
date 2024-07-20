@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SearchResult from "./components/SearchResult";
@@ -12,6 +13,8 @@ const App = () => {
   const [error, setError] = useState(null);
 
   const [filteredData, setFilteredData] = useState(null);
+
+  const [selectedBtn, setSelectedBtn] = useState("all");
 
   useEffect(() => {
     const fetchFoodData = async () => {
@@ -48,7 +51,18 @@ const App = () => {
   if (loading) {
     return <div>Loading........</div>;
   }
-
+  const filteredFood = (type) => {
+    if (type == "all") {
+      setFilteredData(data);
+      setSelectedBtn("all");
+      return;
+    }
+    const filter = data?.filter((food) =>
+      food.type.toLowerCase().includes(type.toLowerCase())
+    );
+    setFilteredData(filter);
+    setSelectedBtn(type);
+  };
   return (
     <>
       <Container>
@@ -65,10 +79,10 @@ const App = () => {
           </div>
         </TopContainer>
         <FilterContainer>
-          <Button>All</Button>
-          <Button>Breakfast</Button>
-          <Button>Lunch</Button>
-          <Button>Dinner</Button>
+          <Button onClick={() => filteredFood("all")}>All</Button>
+          <Button onClick={() => filteredFood("breakfast")}>Breakfast</Button>
+          <Button onClick={() => filteredFood("lunch")}>Lunch</Button>
+          <Button onClick={() => filteredFood("dinner")}>Dinner</Button>
         </FilterContainer>
       </Container>
       <SearchResult data={filteredData}></SearchResult>
