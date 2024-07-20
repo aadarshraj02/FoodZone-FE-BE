@@ -12,7 +12,10 @@ const App = () => {
         </div>
       </TopContainer>
       <FilterContainer>
-        <Button></Button>
+        <Button>All</Button>
+        <Button>Breakfast</Button>
+        <Button>Lunch</Button>
+        <Button>Dinner</Button>
       </FilterContainer>
     </Container>
   );
