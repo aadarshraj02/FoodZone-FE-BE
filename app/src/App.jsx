@@ -27,4 +27,16 @@ const TopContainer = styled.div`
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+
+  .search {
+    input {
+      background-color: transparent;
+      border: 1px solid red;
+      color: #fff;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
 `;
