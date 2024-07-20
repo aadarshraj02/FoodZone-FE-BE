@@ -1,25 +1,27 @@
 import styled from "styled-components";
-import { BASE_URL, Button } from "../App";
+import { BASE_URL, Button, Container } from "../App";
 
 function SearchResult({ data }) {
   return (
     <FoodCardContainer>
-      <FoodCards>
-        {data?.map((food) => (
-          <FoodCard key={food.name}>
-            <div className="foodImage">
-              <img src={BASE_URL + food.image} alt="" />
-            </div>
-            <div className="foodInfo">
-              <div className="info">
-                <h3>{food.name}</h3>
-                <p>{food.text}</p>
+      <Container>
+        <FoodCards>
+          {data?.map((food) => (
+            <FoodCard key={food.name}>
+              <div className="foodImage">
+                <img src={BASE_URL + food.image} alt="" />
               </div>
-              <Button>${food.price.toFixed(2)}</Button>
-            </div>
-          </FoodCard>
-        ))}
-      </FoodCards>
+              <div className="foodInfo">
+                <div className="info">
+                  <h3>{food.name}</h3>
+                  <p>{food.text}</p>
+                </div>
+                <Button>${food.price.toFixed(2)}</Button>
+              </div>
+            </FoodCard>
+          ))}
+        </FoodCards>
+      </Container>
     </FoodCardContainer>
   );
 }
