@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #323343;
+  color: #fff;
+  min-height: 100vh;
+}
 `;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
