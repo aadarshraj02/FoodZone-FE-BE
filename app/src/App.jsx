@@ -52,7 +52,7 @@ const App = () => {
         <Button>Lunch</Button>
         <Button>Dinner</Button>
       </FilterContainer>
-      <SearchResult></SearchResult>
+      <SearchResult data={data}></SearchResult>
     </Container>
   );
 };
