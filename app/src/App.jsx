@@ -20,6 +20,11 @@ export default App;
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  
 `;
-const TopContainer = styled.div``;
+const TopContainer = styled.div`
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+`;
