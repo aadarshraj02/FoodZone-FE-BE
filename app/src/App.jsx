@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const App = () => {
   return (
-    <MainContainer>
+    <Container>
       <TopContainer>
         <div className="logo">
           <img src="/logo.svg" alt="" />
@@ -11,13 +11,15 @@ const App = () => {
           <input type="text" placeholder="Search Food..." />
         </div>
       </TopContainer>
-    </MainContainer>
+    </Container>
   );
 };
 
 export default App;
 
-const MainContainer = styled.div`
-  background-color: #323334;
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  
 `;
 const TopContainer = styled.div``;
