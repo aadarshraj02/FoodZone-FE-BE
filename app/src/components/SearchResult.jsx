@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-function SearchResult() {
+function SearchResult({ data }) {
   return (
     <FoodCardContainer>
-      <FoodCards></FoodCards>
+      <FoodCards>
+        {data?.map((food) => (
+          <FoodCard key={food.name}></FoodCard>
+        ))}
+      </FoodCards>
     </FoodCardContainer>
   );
 }
@@ -15,3 +19,4 @@ const FoodCardContainer = styled.div`
   height: calc(100vh - 220px);
 `;
 const FoodCards = styled.div``;
+const FoodCard = styled.div``;
