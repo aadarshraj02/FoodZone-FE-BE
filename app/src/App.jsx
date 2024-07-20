@@ -11,6 +11,7 @@ const App = () => {
           <input type="text" placeholder="Search Food..." />
         </div>
       </TopContainer>
+      <FilterContainer></FilterContainer>
     </Container>
   );
 };
@@ -40,3 +41,4 @@ const TopContainer = styled.div`
     }
   }
 `;
+const FilterContainer = styled.div``;
