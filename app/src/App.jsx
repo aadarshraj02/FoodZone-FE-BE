@@ -97,7 +97,7 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 const TopContainer = styled.div`
-  min-height: 150px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -113,6 +113,11 @@ const TopContainer = styled.div`
       font-size: 1rem;
       padding: 0 10px;
     }
+  }
+
+  @media (0 < width < 600px) {
+    flex-direction: column;
+    height: 120px;
   }
 `;
 const FilterContainer = styled.div`
