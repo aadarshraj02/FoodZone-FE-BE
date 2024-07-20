@@ -35,23 +35,25 @@ const App = () => {
   }
 
   return (
-    <Container>
-      <TopContainer>
-        <div className="logo">
-          <img src="/logo.svg" alt="" />
-        </div>
-        <div className="search">
-          <input type="text" placeholder="Search Food..." />
-        </div>
-      </TopContainer>
-      <FilterContainer>
-        <Button>All</Button>
-        <Button>Breakfast</Button>
-        <Button>Lunch</Button>
-        <Button>Dinner</Button>
-      </FilterContainer>
+    <>
+      <Container>
+        <TopContainer>
+          <div className="logo">
+            <img src="/logo.svg" alt="" />
+          </div>
+          <div className="search">
+            <input type="text" placeholder="Search Food..." />
+          </div>
+        </TopContainer>
+        <FilterContainer>
+          <Button>All</Button>
+          <Button>Breakfast</Button>
+          <Button>Lunch</Button>
+          <Button>Dinner</Button>
+        </FilterContainer>
+      </Container>
       <SearchResult data={data}></SearchResult>
-    </Container>
+    </>
   );
 };
 
