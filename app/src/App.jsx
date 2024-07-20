@@ -25,6 +25,13 @@ const App = () => {
 
   fetchFoodData();
 
+  if (error) {
+    return <div>{error}</div>;
+  }
+  if (loading) {
+    return <div>{loading}</div>;
+  }
+
   return (
     <Container>
       <TopContainer>
