@@ -48,4 +48,9 @@ const TopContainer = styled.div`
 `;
 const FilterContainer = styled.div``;
 
-const Button = styled.button``;
+const Button = styled.button`
+  background-color: #ff4343;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+`;
