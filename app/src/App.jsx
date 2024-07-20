@@ -17,6 +17,9 @@ const App = () => {
         <Button>Lunch</Button>
         <Button>Dinner</Button>
       </FilterContainer>
+      <FoodCardContainer>
+        <FoodCards></FoodCards>
+      </FoodCardContainer>
     </Container>
   );
 };
@@ -61,3 +64,5 @@ const Button = styled.button`
   color: #fff;
   cursor: pointer;
 `;
+const FoodCardContainer = styled.div``;
+const FoodCards = styled.div``;
