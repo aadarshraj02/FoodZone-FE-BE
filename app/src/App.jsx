@@ -7,6 +7,9 @@ const App = () => {
         <div className="logo">
           <img src="/logo.svg" alt="" />
         </div>
+        <div className="search">
+          <input type="text" placeholder="Search Food..." />
+        </div>
       </TopContainer>
     </MainContainer>
   );
