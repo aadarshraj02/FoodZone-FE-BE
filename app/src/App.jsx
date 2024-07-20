@@ -88,7 +88,7 @@ const FilterContainer = styled.div`
   padding-bottom: 40px;
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
   background-color: #ff4343;
   padding: 6px 12px;
   border-radius: 5px;

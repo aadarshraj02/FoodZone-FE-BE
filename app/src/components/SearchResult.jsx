@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BASE_URL } from "../App";
+import { BASE_URL, Button } from "../App";
 
 function SearchResult({ data }) {
   return (
@@ -9,6 +9,13 @@ function SearchResult({ data }) {
           <FoodCard key={food.name}>
             <div className="foodImage">
               <img src={BASE_URL + food.image} alt="" />
+            </div>
+            <div className="foodInfo">
+              <div className="info">
+                <h3>{food.name}</h3>
+                <p>{food.text}</p>
+              </div>
+              <Button>${food.price.toFixed(2)}</Button>
             </div>
           </FoodCard>
         ))}
