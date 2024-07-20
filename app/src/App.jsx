@@ -29,7 +29,7 @@ const App = () => {
     return <div>{error}</div>;
   }
   if (loading) {
-    return <div>{loading}</div>;
+    return <div>Loading........</div>;
   }
 
   return (
