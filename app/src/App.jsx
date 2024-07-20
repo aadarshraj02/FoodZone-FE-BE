@@ -116,4 +116,8 @@ export const Button = styled.button`
   border: none;
   color: #fff;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
