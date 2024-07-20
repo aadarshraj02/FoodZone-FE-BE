@@ -54,6 +54,7 @@ const FilterContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 40px;
 `;
 
 const Button = styled.button`
@@ -64,5 +65,9 @@ const Button = styled.button`
   color: #fff;
   cursor: pointer;
 `;
-const FoodCardContainer = styled.div``;
+const FoodCardContainer = styled.div`
+  background: url("/bg.png");
+  background-size: cover;
+  height: calc(100vh - 220px);
+`;
 const FoodCards = styled.div``;
