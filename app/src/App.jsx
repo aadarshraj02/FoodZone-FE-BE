@@ -17,5 +17,7 @@ const App = () => {
 
 export default App;
 
-const MainContainer = styled.div``;
+const MainContainer = styled.div`
+  background-color: #323334;
+`;
 const TopContainer = styled.div``;
