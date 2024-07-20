@@ -7,9 +7,13 @@ const App = () => {
   const [data, setData] = useState(null);
 
   const fetchFoodData = async () => {
-    const response = await fetch(BASE_URL);
-    const json = await response.json();
-    console.log(json);
+    try {
+      const response = await fetch(BASE_URL);
+      const json = await response.json();
+      console.log(json);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   fetchFoodData();
